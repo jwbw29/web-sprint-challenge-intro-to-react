@@ -4,9 +4,6 @@ import styled from "styled-components";
 
 const StyledCharacters = styled.div`
   width: 60%;
-  /* display: flex; */
-  /* justify-content: left; */
-  /* align-items: left; */
   div.character {
     background-color: ${(pr) => pr.theme.primaryColor};
   }
@@ -26,7 +23,7 @@ const StyledCharacters = styled.div`
     padding-bottom: 15px;
     padding-left: 10px;
   }
-  /* button {
+  button {
     display: flex;
     flex-direction: row;
     text-align: right;
@@ -36,7 +33,7 @@ const StyledCharacters = styled.div`
     font-size: 1.1rem;
     padding: 5px 15px;
     float: ;
-  } */
+  }
 `;
 
 export default function Character({ name }) {
@@ -44,7 +41,7 @@ export default function Character({ name }) {
     <StyledCharacters>
       <div className="character">
         <h1>{name}</h1>
-        {/* <button>Details</button> */}
+        <button>Details</button>
       </div>
     </StyledCharacters>
   );
