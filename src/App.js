@@ -24,7 +24,8 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {characters.map((char, idx) => {
-        return <Character name={char.name} />;
+        return <Character key={idx} name={char.name} />;
+        //I know I shouldn't use index, but we also aren't supposed to install additional packages (like a uuid generator)
       })}
     </div>
   );
