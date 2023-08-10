@@ -41,8 +41,8 @@ Your finished project must include all of the following requirements:
   1. [x] Build a React component named 'Character' to render an individual character.
   2. [x] ***Map*** over the list in state, and for each character render a Character to the page.
   3. [x] Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
-  4. [ ] The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
-  5. [ ] The components must be styled with **styled-components**.
+  4. [x] The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
+  5. [x] The components must be styled with **styled-components**.
 
   **Notes:**
 
@@ -73,6 +73,14 @@ After finishing your required elements, you can push your work further. These go
 ## Stretch Interview Questions
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  - ReactJS is a library built and *mostly* maintained by Meta. However, it is open-source and can be maintained by other users as well
+  - It makes for faster/more efficient UI building and responsiveness 
+2. Describe component state.
+  - Component state, for lack of better words, is what is currently displayed in the DOM
+  - by *changing* the state, you are changing what is displayed on the DOM
+3. Describe props.
+  - props are a default argument built in to React components
+  - these can be destructured based on the data passed to the Component
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+  - side effects are actions that happen, usually in the background, when another determined action is taken
+  - These side effects can be triggered to happen on certain state or prop changes by adding it as the second argument like so: `useEffect(()=>{return something here}, [variable to prompt the effect])`
