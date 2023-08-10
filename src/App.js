@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Character from "./components/Character";
+import Character from "./components/Character.js";
 import axios from "axios";
 
 const url = "https://swapi.dev/api/people/";
 
 const App = () => {
   // - Try to think through what state you'll need for this app before starting. Then build out the state properties here.
-  const [data, setData] = useState([]);
+  const [characters, setCharacters] = useState([]);
 
   /*  
    - Fetch characters from the API in an effect hook. 
@@ -16,13 +16,16 @@ const App = () => {
   useEffect(() => {
     axios
       .get(url)
-      .then((res) => console.log(res.data))
+      .then((res) => setCharacters(res.data))
       .catch((err) => console.error(err));
   }, []);
 
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      {characters.map((char, idx) => {
+        return <Character name={char.name} />;
+      })}
     </div>
   );
 };

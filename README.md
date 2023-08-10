@@ -35,12 +35,12 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Your finished project must include all of the following requirements:
 
 - [x] Use the endpoint `[GET] https://swapi.dev/api/people/` (mocked in [msw](https://github.com/mswjs/msw)) to obtain characters.
-- [ ] Set the list of characters into state.
-- [ ] Render your characters to the DOM:
+- [x] Set the list of characters into state.
+- [x] Render your characters to the DOM:
 
-  1. [ ] Build a React component named 'Character' to render an individual character.
-  2. [ ] ***Map*** over the list in state, and for each character render a Character to the page.
-  3. [ ] Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
+  1. [x] Build a React component named 'Character' to render an individual character.
+  2. [x] ***Map*** over the list in state, and for each character render a Character to the page.
+  3. [x] Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
   4. [ ] The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
   5. [ ] The components must be styled with **styled-components**.
 
